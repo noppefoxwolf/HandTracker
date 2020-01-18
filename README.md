@@ -43,6 +43,11 @@ func handTracker(_ handTracker: HandTracker!, didOutputPixelBuffer pixelBuffer: 
 - [x] bitcode
 - [ ] x86_64 / i386 
 
+## Known issue
+
+memory leak
+https://github.com/google/mediapipe/issues/387
+
 ## Links
 
 [google/mediapipe](https://github.com/google/mediapipe)
