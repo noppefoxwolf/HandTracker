@@ -45,7 +45,8 @@ func handTracker(_ handTracker: HandTracker!, didOutputPixelBuffer pixelBuffer: 
 
 ## Known issue
 
-memory leak
+### memory leak
+
 https://github.com/google/mediapipe/issues/387
 
 ## Links
