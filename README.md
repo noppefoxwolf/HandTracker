@@ -38,6 +38,11 @@ func handTracker(_ handTracker: HandTracker!, didOutputPixelBuffer pixelBuffer: 
 }
 ```
 
+## TODO
+
+- [x] bitcode
+- [ ] x86_64 / i386 
+
 ## Links
 
 [google/mediapipe](https://github.com/google/mediapipe)
