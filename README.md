@@ -1,5 +1,7 @@
 # HandTracker
 
+![](https://github.com/noppefoxwolf/HandTracker/blob/master/.github/sample.gif)
+
 ## Carthage
 
 ```
