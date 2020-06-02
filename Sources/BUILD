@@ -15,25 +15,6 @@ ios_framework(
     ],
 )
 
-# To use the 3D model instead of the default 2D model, add "--define 3D=true" to the
-# bazel build command.
-config_setting(
-    name = "use_3d_model",
-    define_values = {
-        "3D": "true",
-    },
-)
-
-genrule(
-    name = "model",
-    srcs = select({
-        "//conditions:default": ["//mediapipe/models:hand_landmark.tflite"],
-        ":use_3d_model": ["//mediapipe/models:hand_landmark_3d.tflite"],
-    }),
-    outs = ["hand_landmark.tflite"],
-    cmd = "cp $< $@",
-)
-
 objc_library(
     name = "HandTrackerLibrary",
     srcs = [
@@ -43,8 +24,9 @@ objc_library(
         "HandTracker.h",
     ],
     data = [
-        ":model",
         "//mediapipe/graphs/hand_tracking:hand_tracking_mobile_gpu_binary_graph",
+        "//mediapipe/models:hand_landmark.tflite",
+        "//mediapipe/models:handedness.txt",
         "//mediapipe/models:palm_detection.tflite",
         "//mediapipe/models:palm_detection_labelmap.txt",
     ],
