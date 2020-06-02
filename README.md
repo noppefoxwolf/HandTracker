@@ -43,6 +43,14 @@ func handTracker(_ handTracker: HandTracker!, didOutputPixelBuffer pixelBuffer: 
 - [x] bitcode
 - [ ] x86_64 / i386 
 
+## Donation
+
+Bitcoin `3JicHZiyjHW7bjB2UZ52T2rCDSssrZET4A`
+
+Etherium `0xdBF5d40bE41722ab97250A257C981A23719086F7`
+
+MONA `MLyRMECmWNNAmSVhoq2B5pm4aWBofDT5Cq`
+
 ## Links
 
 [google/mediapipe](https://github.com/google/mediapipe)
